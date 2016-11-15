@@ -1,7 +1,7 @@
 #install dependence
 npm install
 
-#install webpack
+#compile with pack
 webpack
 
 #see example
