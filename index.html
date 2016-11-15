@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        #holder{
+            height:200px;
+            width:550px;
+        }
+        #place {
+            position:relative;
+            margin:7px;
+        }
+        #place a{
+            font-size:0.6em;
+        }
+        #place li
+        {
+            list-style: none outside none;
+            position: absolute;
+        }
+        #place li:hover
+        {
+            background-color:yellow;
+        }
+        #place .seat{
+            height:33px;
+            width:33px;
+            display:block;
+            background: #b8ddf0;
+        }
+
+        #place .vip{
+            border: 2px green solid;
+        }
+        #place .executive{
+            border: 2px red solid;
+        }
+        #place .ordinary{
+            border: 2px white solid;
+        }
+
+        #place .selectedSeat
+        {
+            background: gray;
+        }
+        /* to be implemented */
+        #place .selectingSeat
+        {
+
+        }
+        #place .row-3, #place .row-4{
+            margin-top:10px;
+        }
+        #seatDescription li{
+            verticle-align:middle;
+            list-style: none outside none;
+            padding-left:35px;
+            height:35px;
+            float:left;
+        }
+    </style>
+</head>
+<body>
+<div id="holder">
+    <ul  id="place">
+    </ul>
+</div>
+<div style="float:left;">
+    <ul id="seatDescription">
+        <li><span style="background-color:#b8ddf0;height:33px;width:33px;display: block;" ></span>Available Seat</li>
+        <li><span style="background-color:gray;height:33px;width:33px;display: block;" ></span>Booked Seat</li>
+
+        <li><span style="border: 2px green solid;height:33px;width:33px;display: block;" ></span>VIP</li>
+        <li><span style="border: 2px red solid;height:33px;width:33px;display: block;" ></span>Executive</li>
+
+    </ul>
+</div>
+
+</body>
+<script src="js/scripts.min.js"></script>
+</html>
